@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:ital,wght@0,500;1,200&family=Open+Sans&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playpen+Sans:wght@700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&family=Rubik:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-size: 12px;
+  font-family: Libre Franklin, sans-serif;
+  text-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.card {
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+span {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+p {
+  padding: 0.5rem 0 1rem;
+}
+
+form {
+  padding: 1rem 0;
+}
+
+input {
+  display: block;
+  width: 90%;
+  height: 2.8rem;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  outline: none;
+  letter-spacing: 0.05rem;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+  color :hsl(223, 69%, 53%);
+}
+
+button {
+  width: 90%;
+  height: 2.8rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--Blue);
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  margin: 0.7rem 0;
+}
+
+img {
+  max-width: 100%;
+  padding: 2rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 5rem 0 0.5rem;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 0.7rem;
+  border-radius: 50%; 
+  border: 1.5px solid var(--Pale-Blue);
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.facebook:hover,.twitter:hover, .instagram:hover {
+  color: white;
+}
+
+footer p {
+  padding: 1rem 0;
+  font-size: 0.6rem;
+  color: hsl(0, 0%, 59%);
+}
+
+button:hover, li:hover {
+  background-color: hsla(223, 87%, 63%, 0.756);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: white;
+  cursor: pointer;
+  color: white;
+}
+
+
+.facebook {
+  height: 1.1rem;
+  padding: 0.4rem;
+  color: var(--Blue);
+}
+
+.twitter, .instagram {
+  height: 1.1rem;
+  padding-top: 0.4rem;
+  color: var(--Blue);
+}
+
+.error {
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  text-align: center;
+  padding:  0.3rem 0 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 50%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+  .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .emailid {
+    width: 70%;
+  }
+  input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .button {
+    width: 25%;
+  }
+
+  button {
+    min-width: 100%;
+    margin-left: 0 !important;
+  }
+
+  h2 {
+    padding-top: 1.5rem
+  }
+
+  h2:nth-of-type(2) {
+    font-size: 2.2rem;
+    padding-top: 0.8rem;
+    
+  } 
+  button {
+    width:25%;
+    margin:0;
+    margin-left: 1.5rem;
+  }
+  
+ul {
+  padding: 3rem 0 0.5rem;
+}
+
+.error {
+  text-align: left;
+  padding:  0.5rem 0 0 1.5rem;
+}
+}
+
+
+
+
